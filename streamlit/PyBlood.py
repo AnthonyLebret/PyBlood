@@ -18,7 +18,7 @@ st.markdown(hide_footer_style, unsafe_allow_html=True)
 
 # Image PyBlood
 from PIL import Image
-image = Image.open('PyBlood.jpg')
+image = Image.open('streamlit/PyBlood.jpg')
 st.image(image)
     
 # Titre
