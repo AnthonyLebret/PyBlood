@@ -9,3 +9,4 @@ plotly==5.9.0
 plotly_express==0.4.0
 pillow==9.2.0
 opencv-python==4.7.0.72
+umap-learn==0.5.3
