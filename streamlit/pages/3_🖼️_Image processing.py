@@ -16,7 +16,7 @@ st.markdown(hide_footer_style, unsafe_allow_html=True)
 
 # Image PyBlood
 from PIL import Image
-image = Image.open('PyBlood.jpg')
+image = Image.open('streamlit/PyBlood.jpg')
 st.image(image)
 
 # Titre
@@ -30,7 +30,7 @@ st.write("")
 
 st.subheader("Étapes du traitement d'image")
 
-schema_seg = Image.open('seg_white.png')
+schema_seg = Image.open('data/seg_white.png')
 st.image(schema_seg)
 st.markdown("#### Code")
 st.write("Vous trouverez ci-dessous mon code pour la partie traitement de l'image.")
