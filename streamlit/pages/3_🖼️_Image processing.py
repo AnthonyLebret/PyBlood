@@ -30,7 +30,7 @@ st.write("")
 
 st.subheader("Étapes du traitement d'image")
 
-schema_seg = Image.open('data/seg_white.png')
+schema_seg = Image.open('streamlit/seg_white.png')
 st.image(schema_seg)
 st.markdown("#### Code")
 st.write("Vous trouverez ci-dessous mon code pour la partie traitement de l'image.")
