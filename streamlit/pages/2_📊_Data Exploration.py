@@ -23,15 +23,15 @@ st.markdown(hide_footer_style, unsafe_allow_html=True)
 
 # Image PyBlood
 from PIL import Image
-image = Image.open('PyBlood.jpg')
+image = Image.open('streamlit/PyBlood.jpg')
 st.image(image)
 
 st.title('Data Exploration')
     
 # Import dataset
-df = pd.read_csv("C:/Users/lebre/Documents/Jupyter Notebook/PyBlood/dataset.csv")
-df_mini = pd.read_csv("C:/Users/lebre/Documents/Jupyter Notebook/PyBlood/dataset_mini.csv")
-plot_df = pd.read_csv("C:/Users/lebre/Documents/Jupyter Notebook/PyBlood/plot_UMAP.csv")
+df = pd.read_csv("data/dataset.csv")
+df_mini = pd.read_csv("data/dataset_mini.csv")
+plot_df = pd.read_csv("data/plot_UMAP.csv")
     
 ### Graphique 1
 st.subheader('Répartition des types cellulaires dans le dataset')
