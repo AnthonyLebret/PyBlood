@@ -81,7 +81,7 @@ def generate_df_dask(path):
     return df""")
     
 # Import dataset
-df = pd.read_csv("PyBlood/data/dataset.csv")
+df = pd.read_csv("data/dataset.csv")
     
 # Affichage dataset
 st.subheader("Affichage de quelques lignes du dataset")
