@@ -41,7 +41,7 @@ st.write("Etablir un **système de reconnaissance** des globules blancs reposant
 
 # Étapes du projet
 st.header("Étapes du projet")
-schema = Image.open('Schéma PyBlood.png')
+schema = Image.open('streamlit/PyBlood.png')
 st.image(schema)
 
 st.info("Pour accéder aux analyses et graphiques interactifs (Data Collection, Data Exploration, Image Segmentation, Machine learning : Classification et Conclusion), cliquez dans le menu de gauche.")
