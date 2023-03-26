@@ -1,11 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import plotly_express as px
 import matplotlib.pyplot as plt
-import cv2
-from dask import bag, diagnostics
 import umap
 
 st.set_page_config(page_title="Data Exploration", page_icon="📊")
