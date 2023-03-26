@@ -16,7 +16,7 @@ st.markdown(hide_footer_style, unsafe_allow_html=True)
 
 # Image PyBlood
 from PIL import Image
-image = Image.open('PyBlood.jpg')
+image = Image.open('streamlit/PyBlood.jpg')
 st.image(image)
 
 # Titre
@@ -27,7 +27,7 @@ st.write("Les données brutes téléchargées contiennent un total de **17 092 i
 
 st.write("L'ensemble de données est organisé selon les **huit groupes** suivants : **neutrophiles, éosinophiles, basophiles, lymphocytes, monocytes, granulocytes immatures** (promyélocytes, myélocytes et métamyélocytes), **érythroblastes et plaquettes.**")
 
-random_classes = Image.open('random_classes.png')
+random_classes = Image.open('streamlit/random_classes.png')
 st.image(random_classes)
 
 st.write("Cet premier aperçu met en évidence plusieurs **caractéristiques** qui peuvent **différencier les classes de globules blancs** :")
@@ -81,8 +81,7 @@ def generate_df_dask(path):
     return df""")
     
 # Import dataset
-df = pd.read_csv("C:/Users/lebre/Documents/Jupyter Notebook/PyBlood/dataset.csv")
-df2 = pd.read_csv("C:/Users/lebre/Documents/Jupyter Notebook/PyBlood/dataset_imgs_seg.csv")
+df = pd.read_csv("PyBlood/data/dataset.csv")
     
 # Affichage dataset
 st.subheader("Affichage de quelques lignes du dataset")
