@@ -20,7 +20,7 @@ st.markdown(hide_footer_style, unsafe_allow_html=True)
 
 # Image PyBlood
 from PIL import Image
-image = Image.open('PyBlood.jpg')
+image = Image.open('data/PyBlood.jpg')
 st.image(image)
 
 # Titre
@@ -32,8 +32,8 @@ st.subheader("Réduction de dimension")
 st.write("Afin de pouvoir entraîner **plusieurs modèles de machine learning** sur l'ensemble des données (~17 000 images) en un temps raisonnable, j'ai opté pour une **réduction de dimension via UMAP**, qui a le double avantage de pouvoir être employé pour des **visualisations** mais aussi pour faire des **réductions non linéaires générales**. La taille des images a également été réduite aux dimensions 256x256.")
 
 # Import dataset
-df = pd.read_csv("C:/Users/lebre/Documents/Jupyter Notebook/PyBlood/dataset.csv")
-plot_df = pd.read_csv("C:/Users/lebre/Documents/Jupyter Notebook/PyBlood/plot_UMAP_2d.csv")
+df = pd.read_csv("data/dataset.csv")
+plot_df = pd.read_csv("data/plot_UMAP_2d.csv")
 
 fig_2d = px.scatter(data_frame = plot_df, x='X_UMAP', y='Y_UMAP', color=df.classes, labels={'color': 'classes'})
 fig_2d.update_traces(marker_size=2)
@@ -124,17 +124,17 @@ st.write("L'exécution de la pipeline d'entraînement des modèles pouvant prend
 
 st.write("**Les meilleurs scores** sont obtenus par le modèle de **forêts aléatoires**. L'accuracy et le F1-Score sont de **0.75**. Comme attendu après visualisation de la projection UMAP, **les plaquettes sont correctement classées à 95%** (F1-Score). Néanmoins, les classes basophiles et granulocytes immatures (IG) viennent tirer le score moyen vers le bas : ils sont correctement prédits à hauteur de **59%** pour le premier et **65%** pour le second.")
 
-rf = Image.open('rf.png')
+rf = Image.open('streamlit/rf.png')
 st.image(rf)
 
 with st.expander("Afficher/Cacher la matrice de confusion et le rapport de classification du modèle de régression logistique"):
-    lr = Image.open('lr.png')
+    lr = Image.open('streamlit/lr.png')
     st.image(lr)
 with st.expander("Afficher/Cacher la matrice de confusion et le rapport de classification du modèle des K plus proches voisins"):
-    knn = Image.open('knn.png')
+    knn = Image.open('streamlit/knn.png')
     st.image(knn)
 with st.expander("Afficher/Cacher la matrice de confusion et le rapport de classification du modèle SVM"):
-    svm = Image.open('svm.png')
+    svm = Image.open('streamlit/svm.png')
     st.image(svm)
 
 st.markdown("#### Sur les images segmentées")
@@ -143,15 +143,15 @@ st.write("A la différence des scores sur les images brutes, **les meilleurs sco
 
 st.write("**On peut toutefois noter que les plaquettes sont correctement classées à 96%**, elles sont donc aussi bien classées (même un peu mieux, sûrement dû à la variabilité du jeu de test) que pour les modèles entraînés sur des images non-segmentées.")
 
-knn_seg = Image.open('knn_seg.png')
+knn_seg = Image.open('streamlit/knn_seg.png')
 st.image(knn_seg)
 
 with st.expander("Afficher/Cacher la matrice de confusion et le rapport de classification du modèle de régression logistique"):
-    lr_seg = Image.open('lr_seg.png')
+    lr_seg = Image.open('streamlit/lr_seg.png')
     st.image(lr_seg)
 with st.expander("Afficher/Cacher la matrice de confusion et le rapport de classification du modèle SVM"):
-    svm_seg = Image.open('svm_seg.png')
+    svm_seg = Image.open('streamlit/svm_seg.png')
     st.image(svm_seg)
 with st.expander("Afficher/Cacher la matrice de confusion et le rapport de classification du modèle Random Forest"):
-    rf_seg = Image.open('rf_seg.png')
+    rf_seg = Image.open('streamlit/rf_seg.png')
     st.image(rf_seg)
