@@ -45,21 +45,21 @@ if st.checkbox("Afficher plus de raisons de recruter Anthony"):
     with col1:
         st.success("- Il est très curieux")
         st.success("- Il baisse rarement les bras (ce qui n'est pas très pratique)")
-        st.success("- Il s'est challengé à réaliser ce projet en 5 jours et a ainsi respecter la deadline qu'il s'était lui-même fixé")
+        st.success("- Il s'est challengé à réaliser ce projet en un temps record et a ainsi respecter la deadline qu'il s'était lui-même fixé")
     with col2:
         st.success("- Il a de l'auto-dérision")
         st.success("- Il ne fait pas de bruit quand il mange")
-        st.success("- Il a du recul sur ses défauts : impatient, maladroit, obstiné (là il n'y a plus de doutes), discret...")
+        st.success("- Il a du recul sur ses défauts : impatient, obstiné, discret...")
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("On est convaincu, et on aimerait te voir pour un nouvel entretien"):
+        if st.button("On est convaincu, et on aimerait te voir pour un entretien"):
             st.balloons()
             st.success("Une notification a été envoyé à M.Anthony Lebret")
             time.sleep(2.5)
             st.success("Non je plaisante, je ne sais pas encore comment coder cette fonction. Vous pouvez m'envoyer un mail ou me contacter directement sur mon téléphone.")
     with col2:
-        if st.button("L'équipe Diamidex a décidé de t'éliminer, et leur sentence est irrévocable"):
-            st.success("Merci d'avoir pris le temps de consulter ce mini-projet. J'ai travaillé d'arrache-pied directement après avoir reçu le mail de refus en espérant que cela puisse vous convaincre de ma motivation et mettre en valeur mes compétences. Je reste à votre disposition si vous avez la moindre question.   \n Excellente continuation, Anthony.")
+        if st.button("On a décidé de t'éliminer, et notre sentence est irrévocable"):
+            st.success("Merci d'avoir pris le temps de consulter ce mini-projet. Il représente une soixantaine d'heures de travail qui m'ont permis de me familiariser avec la bibliothèque OpenCV. N'hésitez pas à me contacter pour toute question complémentaire.   \n Cordialement, Anthony.")
         
                 
 st.subheader("Les raisons de ne pas recruter Anthony")
