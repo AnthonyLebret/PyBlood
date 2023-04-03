@@ -25,7 +25,7 @@ st.image(image)
 st.markdown("<h1 style='text-align: center;'>PyBlood : Classification des cellules sanguines</h1>", unsafe_allow_html=True)
 
 # Project PyBlood
-st.write("Projet personnel réalisé post-formation dans le but de mettre en pratique mes **compétences en data science, notamment sur la partie computer vision**.")
+st.write("Projet personnel réalisé post-formation dans le but de mettre en pratique mes compétences en data science, **notamment sur la partie computer vision**.")
 st.write("Auteur :")
 st.write("- Anthony LEBRET", "[Linkedin](https://linkedin.com/in/anthony-lebret-a7aabb176)")
 st.write("Source de données :", "https://data.mendeley.com/datasets/snkd93bnjr/1")
