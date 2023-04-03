@@ -56,7 +56,7 @@ if st.checkbox("Afficher plus de raisons de recruter Anthony"):
             st.balloons()
             st.success("Une notification a été envoyé à M.Anthony Lebret")
             time.sleep(2.5)
-            st.success("Non je plaisante, je ne sais pas encore comment coder cette fonction. Vous pouvez m'envoyer un mail ou me contacter directement sur mon téléphone.")
+            st.success("Non en réalité je ne sais pas encore comment coder cette fonction. Vous pouvez m'envoyer un mail ou me contacter directement sur mon téléphone.")
     with col2:
         if st.button("On a décidé de t'éliminer, et notre sentence est irrévocable"):
             st.success("Merci d'avoir pris le temps de consulter ce mini-projet. Il représente une soixantaine d'heures de travail qui m'ont permis de me familiariser avec la bibliothèque OpenCV. N'hésitez pas à me contacter pour toute question complémentaire.   \n Cordialement, Anthony.")
