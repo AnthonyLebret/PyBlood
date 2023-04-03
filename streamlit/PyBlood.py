@@ -25,7 +25,7 @@ st.image(image)
 st.markdown("<h1 style='text-align: center;'>PyBlood : Classification des cellules sanguines</h1>", unsafe_allow_html=True)
 
 # Project PyBlood
-st.write("Projet personnel réalisé en l'espace de 5 jours dans le but de mettre en pratique mes **compétences en data science** et de **convaincre Arnold** de ma capacité à être rapidement opérationnel sur la partie **traitement d'image**.")
+st.write("Projet personnel réalisé post-formation dans le but de mettre en pratique mes **compétences en data science, notamment sur la partie computer vision**.")
 st.write("Auteur :")
 st.write("- Anthony LEBRET", "[Linkedin](https://linkedin.com/in/anthony-lebret-a7aabb176)")
 st.write("Source de données :", "https://data.mendeley.com/datasets/snkd93bnjr/1")
@@ -37,7 +37,7 @@ st.write("**L'identification** et la **classification** des leucocytes, des plaq
 st.write("L'évaluation visuelle et qualitative des frottis sanguins est souvent nécessaire au diagnostic. Cependant, **l'identification manuelle des cellules du sang est difficile, longue, sujette aux erreurs et nécessite la présence d'un spécialiste qualifié**.")
          
 st.header("Objectif")
-st.write("Etablir un **système de reconnaissance** des globules blancs reposant sur la **segmentation d'image** et la **classification** par des modèles d'apprentissage automatique. (Et par la même occasion, tenter d'obtenir un nouvel entretien chez Diamidex 🙂.)")
+st.write("Etablir un **système de reconnaissance** des globules blancs reposant sur la **segmentation d'image** et la **classification** par des modèles d'apprentissage automatique.")
 
 # Étapes du projet
 st.header("Étapes du projet")
